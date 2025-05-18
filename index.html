@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarePoint Online Pharmacy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>CarePoint Online Pharmacy</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to CarePoint</h2>
+    <p>Your trusted online pharmacy for prescription and OTC medications.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>CarePoint is dedicated to providing accessible and secure healthcare services online.</p>
+    <p>Our team includes pharmacists, tech specialists, and customer support agents focused on your well-being.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Prescription Fulfillment</li>
+      <li>Over-the-Counter Medications</li>
+      <li>Secure Prescription Upload</li>
+      <li>Customer Support Chat</li>
+    </ul>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <h3>Paracetamol 500mg</h3>
+        <p>Price: ₹50</p>
+        <button onclick="addToCart('Paracetamol 500mg', 50)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Vitamin C Tablets</h3>
+        <p>Price: ₹120</p>
+        <button onclick="addToCart('Vitamin C Tablets', 120)">Add to Cart</button>
+      </div>
+    </div>
+    <div id="cart">
+      <h3>Shopping Cart</h3>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: ₹0</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name:<input type="text" name="name" required></label><br>
+      <label>Email:<input type="email" name="email" required></label><br>
+      <label>Message:<textarea name="message" required></textarea></label><br>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: support@carepointpharma.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CarePoint Online Pharmacy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
